@@ -1,4 +1,4 @@
-#Get Pickled!
+# Get Pickled!
 Play at http://snorps.net/getpickled. Open on one persons phone and pass around the room. Have fun! :)
 
 ## Reminder:
