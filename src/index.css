@@ -1,13 +1,100 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: "Colendra";
+    src: url("assets/font/colendra/Colendra.woff2") format("woff2");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: "Colendra";
+    src: url("assets/font/colendra/ColendraBold.woff2") format("woff2");
+	font-weight: bold;
+}
+
+
+@font-face {
+    font-family: "Mouth Breather";
+    src: url("assets/font/mouth_breather/mouthbrebb.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "akaDylan";
+    src: url("assets/font/aka_dylan/akaDylan Open.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "akaDylan-plain";
+    src: url("assets/font/aka_dylan/akaDylan Plain.woff2") format("woff2");
+	font-variant: plain;
+}
+
+
+body {
+	font-family: Arial, serif;
+	background-image: url("assets/image/tabletop.jpg");
+	background-size: cover;
+}
+
+.card {
+	border-radius: 3vh;
+	box-shadow: -0.2vh 0.2vh 0.3vh rgba(0,0,0,0.3), 0vh 0vh 0.3vh 0.3vh rgba(0,0,0,0.2);
+	background-color: white;
+	user-select: none;
+	
+	position:absolute;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	font-size: 5vh;
+	height: 60vh;
+	width: 40vh;
+}
+
+.header {
+	background-color: red;
+	border-radius: 3vh 3vh 0vh 0vh;
+	
+	display:table;
+	width:100%;
+	height:10%;
+}
+
+.header_text {
+	text-align:center;
+	font-size: 5vh;
+	font-family: "Colendra";
+	color:white;
+	
+	display:table-cell;
+	margin:auto;
+	vertical-align: middle;
+}
+
+.card_text {
+	margin:3vh;
+	font-family: "Colendra", serif;
+	height:40vh
+}
+
+.card_logo {
+	color:rgb(204, 204, 204);
+	
+	position:absolute;
+	width:40%;
+	left:50%;
+	bottom:0px;
+	transform: translatex(-50%);
+}
+
+.footer {
+	font-family: Colendra;
+	font-weight: bold;
+	font-size:3vh;
+	color:white;
+	letter-spacing: 0.04vh;
+	line-height: 2.5vh;
+	transform:scale(0.9,1);
+	text-shadow: 0.2vh 0.2vh grey, 0.055vh 0.055vh 0.2vh black;	
+	
+	float:bottom;
+	text-align:center;
 }
